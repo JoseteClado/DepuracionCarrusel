@@ -43,16 +43,16 @@
       overflow: hidden;
   }
   .contentTexto{
-      width: 400px;
-      height: 150px;
+      width: $content_ancho;
+      height: $content_altura;
       position: relative;
-      top: 300px;
+      top: $content_position;
       animation: content-s 5s infinite;
   }
   .contentTexto__titulo{
       font-family: "SourceFont";
-      font-size: 24px;
-      color: #fff;
+      font-size: $texto_tamano_h1;
+      color: $color_texto;
       text-align: left;
       transform: translateX(30px);
       padding-bottom: 10px;
@@ -60,30 +60,30 @@
   .contentTexto__Parrafo {
       font-family: "SourceFont";
       font-weight: normal;
-      font-size: 14px;
+      font-size: $texto_tamano_h2;
       font-style: italic;
-      color: #fff;
+      color: $color_texto;
       text-align: left;
       transform: translateX(30px);
   }
   
   /* Switch */
   .switch {
-      width: 120px;
-      height: 10px;
+      width: $switch_ancho;
+      height: $switch_altura;
       position: absolute;
-      bottom: 50px;
+      bottom: $switch_position_bot;
       z-index: 99;
-      left: 30px;
+      left: $switch_position_left;
   }
   .switch {
       display: flex;
   }
   .switch > a {
-      width: 10px;
-      height: 10px;
+      width: $a_size;
+      height: $a_size;
       border-radius: 50%;
-      background: #333;
+      background: $color_fondo_a;
       margin-right: 5px;
       cursor: pointer;
   }
@@ -92,7 +92,7 @@
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      background: #f39c12;
+      background: $color_fondo2;
       position: relative;
       animation: on 15s infinite;
   }
